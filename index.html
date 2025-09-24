@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome">
+        <h1>Selamat Datang di Tic-Tac-Toe!</h1>
+        <p>Bermain melawan komputer</p>
+    </div>
+
+    <div class="guide">
+        <p>Anda adalah X, komputer adalah O. Klik pada kotak untuk bermain!</p>
+    </div>
+
+    <div id="board" class="board">
+        <div class="cell" onclick="makeMove(0)"></div>
+        <div class="cell" onclick="makeMove(1)"></div>
+        <div class="cell" onclick="makeMove(2)"></div>
+        <div class="cell" onclick="makeMove(3)"></div>
+        <div class="cell" onclick="makeMove(4)"></div>
+        <div class="cell" onclick="makeMove(5)"></div>
+        <div class="cell" onclick="makeMove(6)"></div>
+        <div class="cell" onclick="makeMove(7)"></div>
+        <div class="cell" onclick="makeMove(8)"></div>
+    </div>
+
+    <div id="winScreen" class="win-screen">
+        <div class="win-text">Selamat! Anda Menang!</div>
+        <button class="victory-button" onclick="showMessage()">Lihat Pesan</button>
+        <button class="victory-button" onclick="restartGame()" style="margin-left: 10px;">Main Lagi</button>
+    </div>
+
+    <div id="messagePage" class="message-page">
+        <div class="message-container">
+            <button class="close-button" onclick="closeMessage()">×</button>
+            <div class="message-header">
+                <div class="profile-pic">A</div>
+                <div>
+                    <strong>Admin Game</strong><br>
+                    <small>Sistem</small>
+                </div>
+            </div>
+            <div class="message-content">
+                <p>Terima kasih telah bermain Tic-Tac-Toe!</p>
+                <p>Anda berhasil mengalahkan komputer. Permainan ini menggunakan algoritma sederhana untuk gerakan komputer.</p>
+                <p>Apakah Anda ingin bermain lagi?</p>
+            </div>
+            <div class="message-time">
+                Dikirim hari ini
+            </div>
+            <div class="signature">
+                - Tim Pengembang Game
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
